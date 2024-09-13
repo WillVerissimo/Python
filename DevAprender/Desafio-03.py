@@ -19,9 +19,9 @@ print(f'Velocidade de {v} km/h')
 
 if v < vmax:
     print('Não houve multa')
-elif v < multa_leve:
+elif v <= multa_leve:
     print('Multa leve aplicada')
-elif v > multa_leve and v < multa_grave:
+elif v > multa_leve and v <= multa_grave:
     print('Multa grave aplicada')
 else:
     print('Multa gravíssima aplicada')
