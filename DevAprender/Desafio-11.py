@@ -35,7 +35,7 @@ Usando os dados obtidos no módulo 1, exiba as seguintes informações:
 Parabéns, houve um sorteio e você ganhou um cartão de compras no valor de (valor sorteado).
 '''
 
-from random import choices
+from random import choice
 from datetime import datetime
 
 nome = str(input('Digite seu nome: '))
@@ -43,8 +43,8 @@ idade = int(input('Digite sua idade: '))
 data_registro = datetime.now()
 data_formatada = data_registro.strftime("%d/%m/%Y")
 cartoes = ['R$50,00','R$250,00','R$120,00']
-aniversario = datetime.strptime(input('Digite a data do seu aniversário (dd/mm/aaaa): '), '%d/%m/%Y')
-cartao = choices(cartoes)
+aniversario = datetime.strptime(input('Digite sua data de nascimento (dd/mm/aaaa): '), '%d/%m/%Y')
+cartao = choice(cartoes)
 
 print(f'Olá {nome}, seu registro foi concluído com sucesso no dia {data_formatada}.')
-print(f'Parabéns, houve um sorteio e você ganhou um cartão de compras no valor de {cartao[0]}!')
+print(f'Parabéns, houve um sorteio e você ganhou um cartão de compras no valor de {cartao}!')
