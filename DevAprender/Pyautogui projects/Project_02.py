@@ -10,4 +10,6 @@ def criar_pasta():
     moveTo(909,371,duration=0.5)
     click()
 
+# It's worth mentioning that these coordinates have to be changed for each screen, turning it into a customized macro for each user. 
+
 criar_pasta()
