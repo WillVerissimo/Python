@@ -1,3 +1,5 @@
+# Programa que, determinado uma aba de site, arrasta até uma determinada seção dela
+
 from pyautogui import scroll, moveTo
 
 def scroll_historia():

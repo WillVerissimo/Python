@@ -1,3 +1,5 @@
+# Programa que arrasta documentos automaticamente de acordo com a necessidade
+
 from pyautogui import dragTo, moveTo
 
 def arrastar_documentos():
