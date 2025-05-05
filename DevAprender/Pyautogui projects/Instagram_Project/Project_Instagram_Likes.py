@@ -18,7 +18,7 @@ profile = '/cristiano'
 try:
     Search_bar = locateCenterOnScreen(r'DevAprender\Pyautogui projects\Instagram_Project\Search_bar.PNG')
 except FileNotFoundError:
-    print(f"Arquivo Search_bar.PNG não encontrado.")
+    print(f"File Search_bar.PNG not found.")
     exit()
 
 moveTo(Search_bar[0], Search_bar[1], duration=2)
@@ -41,7 +41,7 @@ sleep(1)
 try:
     heart_icon = locateCenterOnScreen(r'DevAprender\Pyautogui projects\Instagram_Project\Heart_icon.PNG')
 except FileNotFoundError:
-    print(f"Arquivo Heart_icon.PNG não encontrado.")
+    print(f"File Heart_icon.PNG not found.")
     exit()
 
 if heart_icon is not None:
