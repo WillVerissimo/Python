@@ -1,6 +1,6 @@
 from pyautogui import locateCenterOnScreen, click
 
-path = r'C:\Users\Administrador\Documents\Python\Python\Python\DevAprender\Pyautogui projects\Screenshot_captcha.png'
+path = 'Screenshot_captcha.png'
 captcha = locateCenterOnScreen(path)
 
 if captcha is not None:
